@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    text-align: center;
+    
+   
+}
+
+/* AMIMATED TITLE */
+.animate-charcter
+{
+  font-family:Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   text-align: center;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 80px;
+
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+/* h1{
+   text-align: center;
+   color:deepskyblue;
+   padding: 30px;
+   background-color:black;
+} */
+
+nav{
+    background-color:yellow;
+    display: grid;
+    place-items:center;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s ease-in;
+    font-size: 18px;
+}
+
+nav ul a:hover{
+    background-color:red;
+    color: white;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap:20px;
+    grid-row-gap:30px;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 20px;
+
+}
+
+.item img:hover{
+    transform: scale(1.04);
+}
+
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+
+.item button{
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color:rgb(36, 151, 27);
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    transition: 0.2s all;
+}
+
+.item button:hover{
+    transform: scale(1.04);
+}
+@media screen and (max-width:1000px){
+    .item{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
